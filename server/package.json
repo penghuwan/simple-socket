@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "simple-socket-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "WEB实时通信的简单实现，根据WebSocket,Event-Source和AJAX轮询实现降级兼容",
   "main": "index.js",
   "dependencies": {
     "koa": "^2.7.0",
