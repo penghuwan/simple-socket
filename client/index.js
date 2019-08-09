@@ -23,18 +23,21 @@ function Client(host) {
 }
 
 function init() {
+    // 确认采用哪一种通信方式，并初始化指定的对象
+    // 采用WebSocket作为通信方式
     if (window.WebSocket) {
         this.type = WEB_SOCKET;
         this.ws = new WebSocket(`ws://${url}`);
         this.ws.onopen = function () { this.readyState = OPEN }
         return;
     }
+    // 采用server-sent-event作为通信方式
     if (window.EventSource) {
         this.type = EVENT_SOURCE;
         this.es = new EventSource(`http://${url}/eventsource?connection=true`)
         return;
     }
-
+    // 采用Ajax轮询作为通信方式
     this.type = POLLING;
     this.ajax = window.superagent;
 
@@ -147,7 +150,7 @@ var EventObj = {
         on: function (event, cb) {
             emitter.on(event, cb);
         },
-        emit: function (event,data) {
+        emit: function (event, data) {
             // 单纯的AJAX  (」゜ロ゜)」
             $.ajax({
                 type: 'POST',

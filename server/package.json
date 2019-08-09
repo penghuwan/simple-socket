@@ -1,6 +1,6 @@
 {
-  "name": "simple-socket-server",
-  "version": "1.0.0",
+  "name": "simple-socket-serve",
+  "version": "1.0.1",
   "description": "WEB实时通信的简单实现，根据WebSocket,Event-Source和AJAX轮询实现降级兼容",
   "main": "index.js",
   "dependencies": {
@@ -13,8 +13,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node main.js"
   },
-  "author": "",
+  "author": "penghuwan",
   "license": "ISC"
 }

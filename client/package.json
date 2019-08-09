@@ -1,6 +1,6 @@
 {
   "name": "simple-socket-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WEB实时通信的简单实现，根据WebSocket,Event-Source和AJAX轮询实现降级兼容",
   "main": "index.js",
   "dependencies": {
