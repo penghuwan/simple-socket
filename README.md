@@ -53,5 +53,5 @@ server.listen(3000);
 # Output
 ```
 前端: 约3秒后输出aaaa
-服务端端：输出pppppp
+服务端： 输出pppppp
 ```
