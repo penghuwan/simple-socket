@@ -7,12 +7,12 @@ simple-socket是我写的一个Web实时通信工具简单实现，在参考了�
 + 服务端socket.emit('message', "data"); 服务端socket.on('message', function (data) { //... })接收
 
 # NPM
-```
+```js
 npm i simple-socket-serve   （服务端npm包）
 npm i simple-socket-client   (客户端npm包)
 ```
 # Usage
-```
+```js
 // Client
 var client = require('simple-socket-client');
 var client = new Client();
@@ -24,7 +24,7 @@ client.on('connect', socket => {
 })
 ```
 
-```
+```js
 // Server
 const SocketServer = require('simple-socket-serve');
 const http = require('http');
@@ -51,7 +51,7 @@ server.listen(3000);
 ```
 
 # Output
-```
+```js
 前端: 约3秒后输出aaaa
 服务端： 输出pppppp
 ```
