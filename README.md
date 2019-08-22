@@ -1,3 +1,8 @@
+## 个人知乎专栏文章
++ [论一个低配版Web实时通信库是如何实现的（ EventSource篇)](https://zhuanlan.zhihu.com/p/77635294)
++ [论一个低配版Web实时通信库是如何实现的（ WebSocket篇)](https://zhuanlan.zhihu.com/p/77583872)
+包含对代码设计的详细注解
+
 # simple-socket
 simple-socket是我写的一个Web实时通信工具简单实现，在参考了相关源码和资料的基础上，实现了前后端实时互通的基本功能，
 选用了WebSocket ->server-sent-event -> AJAX轮询这三种方式做降级兼容，分为simple-socket-client和simple-socket-server两套代码，
