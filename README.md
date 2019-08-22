@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/release-1.0.0-brightgreen)
 ## 个人知乎专栏文章
 + [论一个低配版Web实时通信库是如何实现的（ EventSource篇)](https://zhuanlan.zhihu.com/p/77635294)
 + [论一个低配版Web实时通信库是如何实现的（ WebSocket篇)](https://zhuanlan.zhihu.com/p/77583872)  
